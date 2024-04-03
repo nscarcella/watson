@@ -1,0 +1,9 @@
+{
+  "plugins": ["@stylistic"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@stylistic/recommended-extends"
+  ],
+  "rules": {
+  }
+}
