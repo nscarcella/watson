@@ -11,8 +11,6 @@ export interface Character {
   image: Image
 }
 
-export let APP_VERSION = 'v1.0.0'
-
 export interface Location {
   id: ID
   name: string

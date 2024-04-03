@@ -5,5 +5,7 @@
     "plugin:@stylistic/recommended-extends"
   ],
   "rules": {
+    "@stylistic/eol-last": ["warn", "never"],
+    "@stylistic/no-multiple-empty-lines": ["warn", { "max": 2, "maxEOF": 0, "maxBOF": 0 }]
   }
 }
