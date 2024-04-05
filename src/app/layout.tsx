@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Courier_Prime } from 'next/font/google'
 import '@picocss/pico/css/pico.fluid.classless.slate.min.css'
+import GlobalContext from './GlobalContext'
+import AuthButton from '@/components/AuthButton'
+
 
 const font = Courier_Prime({
   weight: ['400', '700'],
@@ -16,7 +19,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html>
-      <body className={`${font.className} ${font.variable}`}>{children}</body>
+      <body className={`${font.className} ${font.variable}`}>
+
+        <GlobalContext>
+          <AuthButton />
+        </GlobalContext>
+
+        {children}
+      </body>
     </html>
   )
 }
