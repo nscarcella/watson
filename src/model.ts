@@ -1,14 +1,24 @@
 export type ID = string
 export type Image = string
 export type Icon = string
+export type Color = string
 
 export type Veracity = 'fact' | 'heresay' | 'fake'
+
+
+export interface Investigation {
+  characters: Character[]
+  locations: Location[]
+  activities: Activity[]
+  events: Event[]
+}
 
 export interface Character {
   id: ID
   name: string
   age?: number
   image: Image
+  color: Color
 }
 
 export interface Location {

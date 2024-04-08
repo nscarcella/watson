@@ -20,12 +20,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html>
       <body className={`${font.className} ${font.variable}`}>
-
         <GlobalContext>
           <AuthButton />
-        </GlobalContext>
 
-        {children}
+          {children}
+        </GlobalContext>
       </body>
     </html>
   )

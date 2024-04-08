@@ -1,0 +1,32 @@
+article.Timeline{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    'portraits main';
+}
+
+.Timeline_portraits {
+  grid-area: portraits;
+}
+
+.Timeline_portraits > div, .Timeline_main > div {
+  margin-bottom: calc(var(--pico-spacing) * 0.5);
+}
+
+.Timeline_main {
+  grid-area: main;
+  overflow-x: scroll;
+}
+
+.Timeline_main > div {
+  height: calc(var(--pico-spacing) * 7);
+  display: flex;
+}
+
+.line {
+  margin: auto 0;
+  height: calc(var(--pico-spacing) * 0.3);
+  background: #c00;
+  width: 100%;
+}
